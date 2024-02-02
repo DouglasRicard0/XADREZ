@@ -1,7 +1,5 @@
 package application;
 
-
-
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -22,7 +20,7 @@ public class Program {
 		
 		
 		while (true) {
-			try {
+			 try {
 				UI.clearScreen();
 				UI.printMatch(chessMatch, captured);
 				System.out.println();
@@ -42,8 +40,8 @@ public class Program {
 					captured.add(capturedPiece);
 				
 				}
-				
-			} catch (ChessException e) {
+		} 
+			catch (ChessException e) {
 				System.out.println(e.getMessage());
 				sc.nextLine();
 			}
